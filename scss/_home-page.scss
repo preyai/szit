@@ -1,0 +1,132 @@
+#main-slider {
+  img {
+    width: 100%;
+  }
+  .slide-content {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    padding: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .address {
+      color: #09236b;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .status {
+      opacity: 0.9;
+      color: #09236b;
+      font-size: 13px;
+      font-weight: 900;
+      border: 1px solid rgba(9, 35, 107, 0.2);
+      padding: 0 0.5rem;
+    }
+    .info {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .title {
+      color: #09236b;
+      font-size: 34px;
+      font-weight: 500;
+    }
+    .description {
+      color: #3d4047;
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .dots {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      .dot {
+        width: 5px;
+        height: 5px;
+        background-color: rgba(9, 35, 107, 0.38);
+        &.active {
+          background-color: #09236b;
+        }
+      }
+    }
+    .vall {
+      color: #09236b;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      @include underline;
+    }
+  }
+  .splide__arrows {
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    display: flex;
+    .splide__arrow2 {
+      position: initial;
+      width: 75px;
+      height: 75px;
+      background-color: #ffffff;
+      opacity: 0.9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      margin: 8px;
+    }
+  }
+}
+.tile {
+  background-position: center;
+  background-size: cover;
+  color: #09236b;
+  padding: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #f3f3f3;
+    transition: 0.3s;
+  }
+  .title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 500;
+    max-width: 60%;
+  }
+  .icon {
+    margin-left: auto;
+    width: max-content;
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+  }
+  &:hover {
+    color: #fff;
+    &::before {
+      background-color: transparentize($color: #09236b, $amount: 0.3);
+    }
+    .icon {
+      svg {
+        g {
+          opacity: 1 !important;
+          path {
+            fill: #ffffff !important;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(xxxl) {
+      .title {
+          font-size: 20px;
+      }
+  }
+}

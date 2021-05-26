@@ -1,0 +1,119 @@
+header {
+  padding-top: 37px;
+  padding-bottom: 37px;
+
+  .nav-link {
+    color: #09236b;
+    font-family: Roboto;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include underline;
+  }
+  .phone {
+    color: #09236b;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.84px;
+  }
+  @include media-breakpoint-down(xxxl) {
+    .logo {
+      max-width: 300px;
+    }
+    .nav-link {
+      font-size: 14px;
+    }
+    .phone {
+      font-size: 20px;
+    }
+  }
+  @include media-breakpoint-down(xxl) {
+    .logo {
+      max-width: 200px;
+    }
+    nav {
+      flex: 1;
+    }
+    .nav-link {
+      font-size: 12px;
+      padding: 0.5rem 0.2rem;
+    }
+    .phone {
+      font-size: 18px;
+    }
+  }
+  // адаптивное меню
+  .hamburger {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #09236b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    .hp {
+      width: 6px;
+      height: 6px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      transition: .3s;
+      position: absolute;
+    }
+    .hp1 {
+      transform: translateX(-16px);
+    }
+    .hp3 {
+      transform: translateX(16px);
+    }
+    &.active {
+      .hp1 {
+        height: 30px;
+        transform: translateX(0px) rotate(135deg);
+        border-radius: 3px;
+      }
+      .hp2 {
+        transform: scale(0);
+      }
+      .hp3 {
+        width: 30px;
+        transform: translateX(0px) rotate(135deg);
+        border-radius: 3px;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .d-flex {
+      position: relative;
+    }
+    nav,
+    .phone {
+      position: absolute;
+      top:100%;
+      background-color: #ffffff;
+      transition: 1s;
+    }
+    nav {
+      margin-top: 2rem;
+      width: 100%;
+      .nav {
+        flex-wrap: wrap;
+        max-height: 170px;
+        .nav-item {
+          width: 50%;
+        }
+      }
+      .nav-link {
+        font-weight: 300;
+        &::after {
+          content: none;
+        }
+      }
+    }
+  }
+}

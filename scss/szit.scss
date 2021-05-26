@@ -1,17 +1,21 @@
 
 // параметры
-@import "szit/variables";
+@import "variables";
 
 // bootstrap зависимости
-@import "vendor/rfs";
-@import "mixins/transition";
-@import "mixins/border-radius";
-@import "mixins/gradients";
-@import "functions";
-@import "variables";
-@import "nav";
-@import "reboot";
-@import "bootstrap-grid";
+@import "../node_modules/bootstrap/scss/vendor/rfs";
+@import "../node_modules/bootstrap/scss/mixins/transition";
+@import "../node_modules/bootstrap/scss/mixins/border-radius";
+@import "../node_modules/bootstrap/scss/mixins/gradients";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
 
 // мои зависимости
-@import "szit/header";
+@import "../icons/style";
+@import "fonts";
+@import "base";
+@import "header";
+@import "home-page";

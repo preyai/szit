@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build:jquery": "cp node_modules/jquery/dist/jquery.slim.min.js js/",
+    "build:splide": "cp node_modules/@splidejs/splide/dist/js/splide.min.js js/ && cp node_modules/@splidejs/splide/dist/css/splide.min.css css/"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
+  }
+}
