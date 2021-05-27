@@ -1,0 +1,55 @@
+footer {
+  .logo {
+    img {
+      max-width: 250px;
+    }
+  }
+  .menu-1 {
+    .nav-item {
+      flex-basis: 50%;
+    }
+    .nav-link {
+      color: #09236b;
+      font-size: 27px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: -0.54px;
+    }
+  }
+  .menu-2 {
+    .nav-item {
+      flex-basis: 50%;
+    }
+    .nav-link {
+      color: #09236b;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: -0.32px;
+    }
+  }
+  .contacts {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    color: #09236b;
+    .phone {
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.6px;
+    }
+    .mail {
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.4px;
+    }
+    .address {
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: -0.32px;
+      margin-top: auto;
+    }
+  }
+}

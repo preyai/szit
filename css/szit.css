@@ -6362,6 +6362,69 @@ header .hamburger.active .hp3 {
   }
 }
 
+footer .logo img {
+  max-width: 250px;
+}
+
+footer .menu-1 .nav-item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+footer .menu-1 .nav-link {
+  color: #09236b;
+  font-size: 27px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.54px;
+}
+
+footer .menu-2 .nav-item {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+footer .menu-2 .nav-link {
+  color: #09236b;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.32px;
+}
+
+footer .contacts {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #09236b;
+}
+
+footer .contacts .phone {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.6px;
+}
+
+footer .contacts .mail {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.4px;
+}
+
+footer .contacts .address {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.32px;
+  margin-top: auto;
+}
+
 #main-slider img {
   width: 100%;
 }
@@ -6623,5 +6686,37 @@ header .hamburger.active .hp3 {
 
 .project .info .btn {
   display: inline-block;
+}
+
+#sliders {
+  background-color: #f3f3f3;
+}
+
+.galery .splide__arrows {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+
+#qestions {
+  background-color: #f3f3f3;
+}
+
+.qestion {
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.qestion .qest {
+  color: #09236b;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.88px;
+}
+
+.qestion .answ {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
 }
 /*# sourceMappingURL=szit.css.map */

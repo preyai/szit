@@ -1,11 +1,16 @@
 
 $(function () {
     // init
-    new Splide('.splide').mount();
-    new Splide('.splide2', {
-        type    : 'loop',
-        perPage : 3,
-        autoplay: true,
+    new Splide('.banners').mount();
+    new Splide('#galery1', {
+        type: 'loop',
+        perPage: 6,
+        perMove: 1,
+    }).mount();
+    new Splide('#galery2', {
+        type: 'loop',
+        perPage: 6,
+        perMove: 1,
     }).mount();
     $('.select2').select2();
 

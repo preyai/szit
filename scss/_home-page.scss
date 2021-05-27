@@ -146,3 +146,31 @@
     }
   }
 }
+#sliders {
+  background-color: #f3f3f3;
+}
+.galery {
+  .splide__arrows {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+  }
+}
+#qestions {
+  background-color: #f3f3f3;
+}
+.qestion {
+  background-color: #ffffff;
+  padding: 2rem;
+  .qest {
+    color: #09236b;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.88px;
+  }
+  .answ {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
