@@ -23,11 +23,61 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+p {
+  font-size: 21px;
+  font-weight: 300;
+}
+.sz-bold {
+  color: #09236b;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.link {
+  color: #09236b;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  align-items: center;
+  width: max-content;
+  span {
+    margin-right: 1rem;
+  }
+}
 // mixins
 @mixin underline {
   &::after {
     content: "";
     display: block;
     border-bottom: solid 2px #09236b;
+  }
+}
+@mixin project {
+  .address {
+    color: #09236b;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .status {
+    opacity: 0.9;
+    color: #09236b;
+    font-size: 13px;
+    font-weight: 900;
+    border: 1px solid rgba(9, 35, 107, 0.2);
+    padding: 0 0.5rem;
+  }
+  .info {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .title {
+    color: #09236b;
+    font-size: 34px;
+    font-weight: 500;
+  }
+  .description {
+    color: #3d4047;
+    font-size: 25px;
+    font-weight: 300;
   }
 }

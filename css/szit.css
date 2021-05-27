@@ -6181,6 +6181,35 @@ h2 {
   margin-bottom: 2rem;
 }
 
+p {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.sz-bold {
+  color: #09236b;
+  font-size: 29px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.link {
+  color: #09236b;
+  font-size: 21px;
+  font-weight: 500;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.link span {
+  margin-right: 1rem;
+}
+
 header {
   padding-top: 37px;
   padding-bottom: 37px;
@@ -6342,7 +6371,7 @@ header .hamburger.active .hp3 {
   bottom: 60px;
   left: 60px;
   padding: 60px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6422,12 +6451,15 @@ header .hamburger.active .hp3 {
   position: absolute;
   right: 60px;
   bottom: 60px;
+}
+
+.splide__arrows {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#main-slider .splide__arrows .splide__arrow2 {
+.splide__arrows .splide__arrow2 {
   position: initial;
   width: 75px;
   height: 75px;
@@ -6504,5 +6536,92 @@ header .hamburger.active .hp3 {
   .tile .title {
     font-size: 20px;
   }
+}
+
+#dlinks .sz-bold {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+#dlinks .link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.filters {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filters .fragment {
+  margin: 2rem;
+}
+
+.filters button {
+  margin-left: auto;
+  color: #09236b;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  background: none;
+  border: 0;
+}
+
+.filters button::after {
+  content: "";
+  display: block;
+  border-bottom: solid 2px #09236b;
+}
+
+.project .info {
+  background-color: rgba(241, 241, 241, 0.9);
+  max-width: 80%;
+  margin: auto;
+  padding: 2rem;
+  margin-top: -20%;
+  position: relative;
+  z-index: 2;
+}
+
+.project .info .address {
+  color: #09236b;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.project .info .status {
+  opacity: 0.9;
+  color: #09236b;
+  font-size: 13px;
+  font-weight: 900;
+  border: 1px solid rgba(9, 35, 107, 0.2);
+  padding: 0 0.5rem;
+}
+
+.project .info .info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project .info .title {
+  color: #09236b;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.project .info .description {
+  color: #3d4047;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.project .info .btn {
+  display: inline-block;
 }
 /*# sourceMappingURL=szit.css.map */

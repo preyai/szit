@@ -7,37 +7,11 @@
     bottom: 60px;
     left: 60px;
     padding: 60px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .address {
-      color: #09236b;
-      font-size: 18px;
-      font-weight: 500;
-    }
-    .status {
-      opacity: 0.9;
-      color: #09236b;
-      font-size: 13px;
-      font-weight: 900;
-      border: 1px solid rgba(9, 35, 107, 0.2);
-      padding: 0 0.5rem;
-    }
-    .info {
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
-    .title {
-      color: #09236b;
-      font-size: 34px;
-      font-weight: 500;
-    }
-    .description {
-      color: #3d4047;
-      font-size: 25px;
-      font-weight: 300;
-    }
+    @include project;
     .dots {
       display: flex;
       gap: 0.5rem;
@@ -63,19 +37,21 @@
     position: absolute;
     right: 60px;
     bottom: 60px;
+  }
+}
+.splide__arrows {
+  display: flex;
+  .splide__arrow2 {
+    position: initial;
+    width: 75px;
+    height: 75px;
+    background-color: #ffffff;
+    opacity: 0.9;
     display: flex;
-    .splide__arrow2 {
-      position: initial;
-      width: 75px;
-      height: 75px;
-      background-color: #ffffff;
-      opacity: 0.9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: none;
-      margin: 8px;
-    }
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 8px;
   }
 }
 .tile {
@@ -125,8 +101,48 @@
     }
   }
   @include media-breakpoint-down(xxxl) {
-      .title {
-          font-size: 20px;
-      }
+    .title {
+      font-size: 20px;
+    }
+  }
+}
+#dlinks {
+  .sz-bold {
+    flex: 3;
+  }
+  .link {
+    flex: 1;
+  }
+}
+.filters {
+  flex: 1;
+  display: flex;
+  .fragment {
+    margin: 2rem;
+  }
+  button {
+    margin-left: auto;
+    color: #09236b;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    background: none;
+    border: 0;
+    @include underline;
+  }
+}
+.project {
+  .info {
+    background-color: rgba(241, 241, 241, 0.9);
+    max-width: 80%;
+    margin: auto;
+    padding: 2rem;
+    margin-top: -20%;
+    position: relative;
+    z-index: 2;
+    @include project;
+    .btn {
+      display: inline-block;
+    }
   }
 }
