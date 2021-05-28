@@ -6118,8 +6118,8 @@ progress {
 
 @font-face {
   font-family: "szit-icons";
-  src: url("/icons/fonts/szit-icons.eot?p0zccu");
-  src: url("/icons/fonts/szit-icons.eot?p0zccu#iefix") format("embedded-opentype"), url("/icons/fonts/szit-icons.ttf?p0zccu") format("truetype"), url("/icons/fonts/szit-icons.woff?p0zccu") format("woff"), url("/icons/fonts/szit-icons.svg?p0zccu#szit-icons") format("svg");
+  src: url("../icons/fonts/szit-icons.eot?p0zccu");
+  src: url("../icons/fonts/szit-icons.eot?p0zccu#iefix") format("embedded-opentype"), url("../icons/fonts/szit-icons.ttf?p0zccu") format("truetype"), url("../icons/fonts/szit-icons.woff?p0zccu") format("woff"), url("../icons/fonts/szit-icons.svg?p0zccu#szit-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -6425,6 +6425,12 @@ footer .contacts .address {
   margin-top: auto;
 }
 
+@media (max-width: 1899.98px) {
+  footer .menu-1 .nav-link {
+    font-size: 21px;
+  }
+}
+
 #main-slider img {
   width: 100%;
 }
@@ -6623,7 +6629,45 @@ footer .contacts .address {
 }
 
 .filters .fragment {
-  margin: 2rem;
+  margin: 0 2rem;
+}
+
+.filters .label {
+  color: #434447;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 .5rem;
+}
+
+.filters label > span {
+  color: #6d6f72;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.32px;
+  margin: 0 .25rem;
+}
+
+.filters label input[type="radio"] {
+  display: none;
+}
+
+.filters label input[type="radio"]:checked + span {
+  color: #09236b;
+  border-bottom: solid 2px #09236b;
+}
+
+.filters .select2-container--default {
+  color: #09236b;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+}
+
+.filters .select2-container--default .select2-selection--single {
+  border: 0;
+  border-bottom: solid 2px #09236b;
+  border-radius: 0;
 }
 
 .filters button {
@@ -6692,6 +6736,24 @@ footer .contacts .address {
   background-color: #f3f3f3;
 }
 
+.galery .splide__slide {
+  padding: 0 2rem;
+}
+
+.galery .g_slide {
+  background: #fff;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .galery .splide__arrows {
   position: absolute;
   bottom: 100%;
@@ -6705,6 +6767,7 @@ footer .contacts .address {
 .qestion {
   background-color: #ffffff;
   padding: 2rem;
+  margin-bottom: 3rem;
 }
 
 .qestion .qest {
@@ -6712,11 +6775,86 @@ footer .contacts .address {
   font-size: 22px;
   font-weight: 700;
   letter-spacing: -0.88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 40px;
+  margin-bottom: 2rem;
+}
+
+.qestion .qest::after {
+  content: "";
+  padding: 15px;
+  display: block;
+  border-bottom: 3px solid #09236b;
+  border-right: 3px solid #09236b;
+  -webkit-transform: rotate(45deg) translateY(-100%);
+          transform: rotate(45deg) translateY(-100%);
 }
 
 .qestion .answ {
   color: #000000;
   font-size: 18px;
   font-weight: 300;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.qestion.active .qest::after {
+  opacity: 0.3;
+  -webkit-transform: rotate(45deg) translateY(-50%) translateX(50%) rotateZ(180deg);
+          transform: rotate(45deg) translateY(-50%) translateX(50%) rotateZ(180deg);
+}
+
+.qestion.active .answ {
+  max-height: 1000px;
+}
+
+#map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#map .contacts {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #09236b;
+  background-color: #ffffff;
+  padding: 2rem;
+  position: absolute;
+}
+
+#map .contacts .phone {
+  font-size: 30px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.6px;
+}
+
+#map .contacts .mail {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.4px;
+}
+
+#map .contacts .address {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: -0.32px;
+  margin-top: auto;
 }
 /*# sourceMappingURL=szit.css.map */

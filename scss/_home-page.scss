@@ -118,7 +118,45 @@
   flex: 1;
   display: flex;
   .fragment {
-    margin: 2rem;
+    margin: 0 2rem;
+  }
+  .label {
+    color: #434447;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 .5rem;
+  }
+  label {
+    >span {
+      color: #6d6f72;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: -0.32px;
+      margin: 0 .25rem;
+    }
+    input {
+      &[type="radio"] {
+        display: none;
+        &:checked {
+          &+span {
+            color: #09236b;
+            border-bottom: solid 2px #09236b;
+          }
+        }
+      }
+    }
+  }
+  .select2-container--default {
+    color: #09236b;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.32px;
+    .select2-selection--single {
+      border: 0;
+      border-bottom: solid 2px #09236b;
+      border-radius: 0;
+    }
   }
   button {
     margin-left: auto;
@@ -150,6 +188,16 @@
   background-color: #f3f3f3;
 }
 .galery {
+  .splide__slide {
+    padding: 0 2rem;
+  }
+  .g_slide {
+    background: #fff;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .splide__arrows {
     position: absolute;
     bottom: 100%;
@@ -162,15 +210,75 @@
 .qestion {
   background-color: #ffffff;
   padding: 2rem;
+  margin-bottom: 3rem;
   .qest {
     color: #09236b;
     font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.88px;
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    margin-bottom: 2rem;
+    &::after {
+      content: "";
+      padding: 15px;
+      display: block;
+      border-bottom: 3px solid #09236b;
+      border-right: 3px solid #09236b;
+      transform: rotate(45deg) translateY(-100%);
+      // margin: 2rem;
+    }
   }
   .answ {
     color: #000000;
     font-size: 18px;
     font-weight: 300;
+    transition: 0.3s;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  &.active {
+    .qest {
+      &::after {
+        opacity: 0.3;
+        transform: rotate(45deg) translateY(-50%) translateX(50%)
+          rotateZ(180deg);
+      }
+    }
+    .answ {
+      max-height: 1000px;
+    }
+  }
+}
+#map {
+  display: flex;
+  .contacts {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #09236b;
+    background-color: #ffffff;
+    padding: 2rem;
+    position: absolute;
+    .phone {
+      font-size: 30px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.6px;
+    }
+    .mail {
+      font-size: 20px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: -0.4px;
+    }
+    .address {
+      font-size: 16px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: -0.32px;
+      margin-top: auto;
+    }
   }
 }
