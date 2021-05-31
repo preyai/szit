@@ -12,6 +12,7 @@ $(function () {
         perPage: 6,
         perMove: 1,
     }).mount();
+    new Splide('.post_slider').mount();
     $('.select2').select2({
         width: 'max-content'
     });

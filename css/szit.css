@@ -6172,18 +6172,37 @@ img {
   margin-left: 1rem;
 }
 
+h1 {
+  color: #09236b;
+  font-size: 45px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -1.35px;
+}
+
 h2 {
   color: #09236b;
-  font-family: Roboto;
   font-size: 60px;
   font-weight: 500;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
+h3 {
+  color: #09236b;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: -0.96px;
+}
+
 p {
   font-size: 21px;
   font-weight: 300;
+}
+
+a {
+  color: #09236b;
 }
 
 .sz-bold {
@@ -6208,6 +6227,77 @@ p {
 
 .link span {
   margin-right: 1rem;
+}
+
+.post-title {
+  max-width: 60%;
+}
+
+.post-title span {
+  color: #525252;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+#post .bold {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+#post .semi {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#post ul {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#breadcrumbs a {
+  text-transform: uppercase;
+  color: #09236b;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#breadcrumbs svg {
+  margin: 0 1rem;
+}
+
+section.blue-bgr {
+  background-color: #f3f3f3;
+}
+
+.post {
+  background-color: #f3f3f3;
+  padding: 60px;
+  margin-bottom: 30px;
+}
+
+.post .date {
+  color: #525252;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: -0.38px;
+  margin-bottom: 30px;
+}
+
+.post .title {
+  color: #09236b;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.pagination .pag {
+  color: #494949;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 2rem;
+  cursor: pointer;
 }
 
 header {
@@ -6483,6 +6573,8 @@ footer .contacts .address {
   color: #3d4047;
   font-size: 25px;
   font-weight: 300;
+  line-height: 1;
+  margin-bottom: 2rem;
 }
 
 #main-slider .slide-content .dots {
@@ -6553,7 +6645,7 @@ footer .contacts .address {
   color: #09236b;
   padding: 40px;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .tile::before {
@@ -6726,6 +6818,8 @@ footer .contacts .address {
   color: #3d4047;
   font-size: 25px;
   font-weight: 300;
+  line-height: 1;
+  margin-bottom: 2rem;
 }
 
 .project .info .btn {
@@ -6856,5 +6950,73 @@ footer .contacts .address {
   font-style: normal;
   letter-spacing: -0.32px;
   margin-top: auto;
+}
+
+#contacts p {
+  font-size: 25px;
+}
+
+#contacts .phone {
+  color: #09236b;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.84px;
+}
+
+#contacts .mail {
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.4px;
+  margin-left: 30px;
+}
+
+#contacts .mail::after {
+  content: "";
+  display: block;
+  border-bottom: solid 2px #09236b;
+}
+
+#contacts .cont-line {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+#contacts .row-form {
+  margin-top: 30px;
+}
+
+#contacts .row-form input,
+#contacts .row-form textarea {
+  border-radius: 0;
+  color: #525252;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: -0.48px;
+  padding: 17px 25px;
+}
+
+#contacts .row-form .col-4 {
+  border-bottom: 0;
+}
+
+#contacts .row-form .col-4:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+
+#contacts .btn {
+  background-color: #09236b;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 50px;
+}
+
+#contacts .inf {
+  font-size: 13px;
 }
 /*# sourceMappingURL=szit.css.map */

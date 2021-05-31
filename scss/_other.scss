@@ -1,0 +1,54 @@
+#contacts {
+  p {
+    font-size: 25px;
+  }
+  .phone {
+    color: #09236b;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: -0.84px;
+  }
+  .mail {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: -0.4px;
+    margin-left: 30px;
+    @include underline;
+  }
+  .cont-line {
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+  .row-form {
+    margin-top: 30px;
+    input,
+    textarea {
+      border-radius: 0;
+      color: #525252;
+      font-size: 16px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: -0.48px;
+      padding: 17px 25px;
+    }
+    .col-4 {
+      border-bottom: 0;
+      &:nth-child(2) {
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+  .btn {
+    background-color: #09236b;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;padding: 15px 50px;
+  }
+  .inf {
+    font-size: 13px;
+  }
+}
