@@ -6349,6 +6349,47 @@ section.blue-bgr {
   background: #ffffff;
 }
 
+.company-title {
+  color: #09236b;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#history {
+  height: 253px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 6rem;
+}
+
+#history .splide__arrows {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+}
+
+#history .d-flex {
+  border-top: solid 1px #c4c4c4;
+}
+
+#history .year {
+  padding-top: 1rem;
+  color: #09236b;
+  font-size: 85px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: -3.4px;
+  line-height: 1;
+  border-top: solid 5px #09236b;
+}
+
+#history .descr {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 header {
   padding-top: 37px;
   padding-bottom: 37px;
