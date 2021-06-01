@@ -6359,7 +6359,7 @@ section.blue-bgr {
   color: #000000;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   margin-top: 60px;
 }
 
@@ -6391,13 +6391,13 @@ section.blue-bgr {
 
 #history .descr {
   padding-top: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 #serts,
 #nagr {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
 #serts .sert,
@@ -6410,10 +6410,11 @@ section.blue-bgr {
   position: absolute;
   bottom: 100%;
   right: 0;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 .sert-sliders h3 {
+  margin-top: 60px;
   font-size: 48px;
 }
 
