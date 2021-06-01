@@ -6356,17 +6356,20 @@ section.blue-bgr {
 }
 
 #history {
-  height: 253px;
   color: #000000;
   font-size: 20px;
   font-weight: 300;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 #history .splide__arrows {
   position: absolute;
   bottom: 100%;
   right: 0;
+}
+
+#history .splide__arrows .splide__arrow2 {
+  background: #f3f3f3;
 }
 
 #history .d-flex {
