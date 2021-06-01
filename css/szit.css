@@ -7199,6 +7199,16 @@ footer .foot-0 div:last-child svg {
   display: inline-block;
 }
 
+@media (max-width: 767.98px) {
+  .project .info {
+    margin-top: -40%;
+    margin-bottom: 2rem;
+  }
+  .project .info .status {
+    margin: 1rem 0;
+  }
+}
+
 #sliders {
   background-color: #f3f3f3;
   padding-top: 2rem;

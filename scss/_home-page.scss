@@ -225,6 +225,13 @@
     .btn {
       display: inline-block;
     }
+    @include media-breakpoint-down(md) {
+      margin-top: -40%;
+      margin-bottom: 2rem;
+      .status {
+        margin: 1rem 0;
+      }
+    }
   }
 }
 #sliders {
