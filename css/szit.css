@@ -6438,6 +6438,10 @@ section.blue-bgr {
   line-height: 2;
 }
 
+#posts .project .info .btn {
+  border: 0;
+}
+
 header {
   padding-top: 37px;
   padding-bottom: 37px;
