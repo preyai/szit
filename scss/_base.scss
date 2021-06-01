@@ -195,6 +195,17 @@ section {
     padding-right: 1rem;
   }
 }
+#serts,
+#nagr {
+  .sert {
+    padding: .5rem;
+  }
+  .splide__arrows {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+  }
+}
 // mixins
 @mixin underline {
   &::after {
