@@ -1,7 +1,7 @@
 header {
   padding-top: 37px;
   padding-bottom: 37px;
-
+  border-bottom: solid 1px #dbdbdb;
   .nav-link {
     color: #09236b;
     font-family: Roboto;
@@ -59,7 +59,7 @@ header {
       height: 6px;
       background-color: #ffffff;
       border-radius: 50%;
-      transition: .3s;
+      transition: 0.3s;
       position: absolute;
     }
     .hp1 {
@@ -94,7 +94,7 @@ header {
     nav,
     .phone {
       position: absolute;
-      top:100%;
+      top: 100%;
       background-color: #ffffff;
       transition: 1s;
     }

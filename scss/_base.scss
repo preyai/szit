@@ -205,7 +205,7 @@ section {
   margin-top: 70px;
   margin-bottom: 70px;
   .sert {
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .splide__arrows {
     position: absolute;
@@ -218,6 +218,20 @@ section {
   h3 {
     margin-top: 60px;
     font-size: 48px;
+  }
+}
+#posts {
+  .project {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .info {
+      .description {
+        font-size: 18px;
+      }
+      .status {
+        line-height: 2;
+      }
+    }
   }
 }
 // mixins
