@@ -136,4 +136,27 @@ footer {
       max-width: unset;
     }
   }
+  @include media-breakpoint-down(md) {
+    .menu-1 {
+      .nav-item {
+       flex-basis: 100%;
+       text-align: center;
+      }
+      .nav-link {
+        font-size: 20px;
+      }
+    }
+    .menu-2 {
+      .nav-item {
+       flex-basis: 100%;
+       text-align: center;
+      }
+      .nav-link {
+        font-size: 18px;
+      }
+    }
+    .contacts {
+      text-align: center;
+    }
+  }
 }
