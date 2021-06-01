@@ -12,6 +12,9 @@
     flex-direction: column;
     justify-content: space-between;
     @include project;
+    .btn {
+      border: 3px solid #09236b;
+    }
     .dots {
       display: flex;
       gap: 0.5rem;
@@ -186,6 +189,11 @@
 }
 #sliders {
   background-color: #f3f3f3;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  h2 {
+    font-size: 40px;
+  }
 }
 .galery {
   .splide__slide {
