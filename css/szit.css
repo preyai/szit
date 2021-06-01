@@ -7068,6 +7068,10 @@ footer .foot-0 div:last-child svg {
   display: flex;
 }
 
+.filters .fragment {
+  margin: 1rem 0;
+}
+
 @media (min-width: 768px) {
   .filters .fragment {
     margin: 0 2rem;
