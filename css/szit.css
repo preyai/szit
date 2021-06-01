@@ -6395,6 +6395,11 @@ section.blue-bgr {
   padding-right: 1rem;
 }
 
+#serts,
+#nagr {
+  margin-top: 60px;
+}
+
 #serts .sert,
 #nagr .sert {
   padding: .5rem;
@@ -6405,6 +6410,11 @@ section.blue-bgr {
   position: absolute;
   bottom: 100%;
   right: 0;
+  padding-bottom: 70px;
+}
+
+.sert-sliders h3 {
+  font-size: 48px;
 }
 
 header {
