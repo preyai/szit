@@ -74,4 +74,11 @@ footer {
       display: none;
     }
   }
+  @include media-breakpoint-down(xl) {
+    .menu-1 {
+      .nav-link {
+        font-size: 16px;
+      }
+    }
+  }
 }

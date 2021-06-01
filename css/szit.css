@@ -6623,6 +6623,12 @@ footer .contacts .address {
   }
 }
 
+@media (max-width: 1199.98px) {
+  footer .menu-1 .nav-link {
+    font-size: 16px;
+  }
+}
+
 #main-slider img {
   width: 100%;
 }
