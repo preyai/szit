@@ -6319,6 +6319,11 @@ section.blue-bgr {
   letter-spacing: -1px;
 }
 
+.pagination {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .pagination .pag {
   color: #494949;
   font-size: 22px;
