@@ -93,13 +93,14 @@ header {
     }
     nav,
     .phone {
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      // top: 100%;
       background-color: #ffffff;
-      transition: 1s;
+      // transition: 1s;
+      margin-top: 7rem;
     }
     nav {
-      margin-top: 2rem;
+      margin-top: 17rem;
       width: 100%;
       .nav {
         flex-wrap: wrap;

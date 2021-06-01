@@ -8,8 +8,10 @@ $(function () {
     });
 
     console.log('start');
+    
     $('.hamburger').on('click', function () {
         $(this).toggleClass('active');
+        $('.mob-hid').toggleClass('active');
     });
     $('.square').each(function (element) {
         $(this).height($(this).width());

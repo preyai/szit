@@ -6604,14 +6604,12 @@ header .hamburger.active .hp3 {
   }
   header nav,
   header .phone {
-    position: absolute;
-    top: 100%;
+    position: fixed;
     background-color: #ffffff;
-    -webkit-transition: 1s;
-    transition: 1s;
+    margin-top: 7rem;
   }
   header nav {
-    margin-top: 2rem;
+    margin-top: 17rem;
     width: 100%;
   }
   header nav .nav {
@@ -7550,5 +7548,22 @@ footer .foot-0 div:last-child svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mob-hid {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  -webkit-transition: .3s;
+  transition: .3s;
+  width: 100%;
+}
+
+.mob-hid.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=szit.css.map */
