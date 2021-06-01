@@ -6799,6 +6799,7 @@ footer .foot-0 div:last-child svg {
     font-size: 18px;
   }
   footer .contacts {
+    margin-top: 2rem;
     text-align: center;
   }
 }
