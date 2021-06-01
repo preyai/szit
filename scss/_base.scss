@@ -11,6 +11,7 @@ img {
   border: 3px solid #09236b;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  background: none;
   svg {
     margin-left: 1rem;
   }
@@ -200,6 +201,7 @@ section {
 #serts,
 #nagr {
   margin-top: 70px;
+  margin-bottom: 70px;
   .sert {
     padding: .5rem;
   }

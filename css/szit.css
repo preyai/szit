@@ -6166,6 +6166,7 @@ img {
   border: 3px solid #09236b;
   padding: 0.5rem 1rem;
   text-decoration: none;
+  background: none;
 }
 
 .btn svg {
@@ -6398,6 +6399,7 @@ section.blue-bgr {
 #serts,
 #nagr {
   margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 #serts .sert,
@@ -6645,15 +6647,27 @@ footer .contacts .address {
   }
 }
 
-@media (max-width: 767.98px) {
-  footer .logo {
-    display: none;
+@media (max-width: 1199.98px) {
+  footer .menu-1 .nav-link {
+    font-size: 14px;
+  }
+  footer .contacts {
+    max-width: 250px;
+  }
+  footer .contacts .phone {
+    font-size: 20px;
+  }
+  footer .contacts .mail {
+    font-size: 16px;
+  }
+  footer .contacts .address {
+    font-size: 10px;
   }
 }
 
-@media (max-width: 1199.98px) {
-  footer .menu-1 .nav-link {
-    font-size: 16px;
+@media (max-width: 767.98px) {
+  footer .logo {
+    display: none;
   }
 }
 
