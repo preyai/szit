@@ -35,6 +35,29 @@
       text-decoration: none;
       @include underline;
     }
+    @include media-breakpoint-down(lg) {
+      max-width: 70%;
+      padding: 20px;
+      bottom: 20px;
+      left: 20px;
+      .info {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+      .title {
+        font-size: 22px;
+      }
+      .description {
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+      }
+      .dots {
+        margin-bottom: 1rem;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      transform: scale(0.5) translate(-15%, 15%);
+    }
   }
   .splide__arrows {
     position: absolute;
@@ -127,22 +150,22 @@
     color: #434447;
     font-size: 14px;
     font-weight: 400;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
   label {
-    >span {
+    > span {
       color: #6d6f72;
       font-size: 16px;
       font-weight: 700;
       font-style: normal;
       letter-spacing: -0.32px;
-      margin: 0 .25rem;
+      margin: 0 0.25rem;
     }
     input {
       &[type="radio"] {
         display: none;
         &:checked {
-          &+span {
+          & + span {
             color: #09236b;
             border-bottom: solid 2px #09236b;
           }
