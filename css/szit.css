@@ -6267,7 +6267,8 @@ a {
 #post .bold {
   font-size: 28px;
   font-weight: 400;
-  line-height: 3;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 #post .semi {
