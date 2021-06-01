@@ -6360,13 +6360,14 @@ section.blue-bgr {
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 3rem;
+  margin-top: 60px;
 }
 
 #history .splide__arrows {
   position: absolute;
   bottom: 100%;
   right: 0;
-  padding-bottom: 1rem;
+  padding-bottom: 70px;
 }
 
 #history .splide__arrows .splide__arrow2 {
