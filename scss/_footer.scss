@@ -1,5 +1,5 @@
 footer {
-  
+
   .logo {
     img {
       max-width: 250px;
@@ -79,6 +79,13 @@ footer {
         font-size: 14px;
         font-weight: 400;
         letter-spacing: -0.28px;
+      }
+      &:last-child {
+        display: flex;
+        align-items: center;
+        svg {
+          margin-left: 16px;
+        }
       }
     }
   }

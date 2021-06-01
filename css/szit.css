@@ -6672,6 +6672,19 @@ footer .foot-0 div:nth-child(2) {
   letter-spacing: -0.28px;
 }
 
+footer .foot-0 div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot-0 div:last-child svg {
+  margin-left: 16px;
+}
+
 @media (max-width: 1899.98px) {
   footer .logo img {
     max-width: 150px;
