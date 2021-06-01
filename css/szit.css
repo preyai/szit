@@ -6324,12 +6324,23 @@ section.blue-bgr {
   margin-bottom: 100px;
 }
 
+.pagination .prev,
+.pagination .next {
+  background-color: #f3f3f3;
+  padding: 1rem;
+}
+
 .pagination .pag {
   color: #494949;
   font-size: 22px;
   font-weight: 500;
-  margin: 0 2rem;
+  margin: 0 1rem;
   cursor: pointer;
+  padding: 1rem;
+}
+
+.pagination .pag.active, .pagination .pag:hover {
+  background-color: #f3f3f3;
 }
 
 #post_slider .splide__slide {

@@ -136,12 +136,22 @@ section {
 .pagination {
   margin-top: 100px;
   margin-bottom: 100px;
+  .prev,
+  .next {
+    background-color: #f3f3f3;
+    padding: 1rem;
+  }
   .pag {
     color: #494949;
     font-size: 22px;
     font-weight: 500;
-    margin: 0 2rem;
+    margin: 0 1rem;
     cursor: pointer;
+    padding: 1rem;
+    &.active,
+    &:hover {
+      background-color: #f3f3f3;
+    }
   }
 }
 #post_slider {
