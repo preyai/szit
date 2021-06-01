@@ -116,68 +116,74 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="post_slider">
+                    <div id="post_slider" class="splide">
                         <div class="splide__track">
                             <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <div>галерея</div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div>галерея</div>
-                                </li>
-                                <li class="splide__slide">
-                                    <div>галерея</div>
-                                </li>
+                                <li class="splide__slide">Slide 01</li>
+                                <li class="splide__slide">Slide 02</li>
+                                <li class="splide__slide">Slide 03</li>
                             </ul>
+                        </div>
+                        <div class="splide__arrows">
+                            <button class="splide__arrow splide__arrow--prev">
+                                <svg width="22" height="39" viewBox="0 0 22 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 37L19.5 19.5L2 2" stroke="#09236B" stroke-width="3" />
+                                </svg>
+                            </button>
+                            <button class="splide__arrow splide__arrow--next">
+                                <svg width="22" height="39" viewBox="0 0 22 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 37L19.5 19.5L2 2" stroke="#09236B" stroke-width="3" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="post">
-                    <div class="date">12 Ноября 2020</div>
-                    <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
-                        Руставели»</div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="post">
+                        <div class="date">12 Ноября 2020</div>
+                        <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
+                            Руставели»</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post">
+                        <div class="date">12 Ноября 2020</div>
+                        <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
+                            Руставели»</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post">
+                        <div class="date">12 Ноября 2020</div>
+                        <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
+                            Руставели»</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post">
+                        <div class="date">12 Ноября 2020</div>
+                        <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
+                            Руставели»</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post">
+                        <div class="date">12 Ноября 2020</div>
+                        <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
+                            Руставели»</div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="post">
+                        <div class="date">12 Ноября 2020</div>
+                        <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
+                            Руставели»</div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="post">
-                    <div class="date">12 Ноября 2020</div>
-                    <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
-                        Руставели»</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="post">
-                    <div class="date">12 Ноября 2020</div>
-                    <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
-                        Руставели»</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="post">
-                    <div class="date">12 Ноября 2020</div>
-                    <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
-                        Руставели»</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="post">
-                    <div class="date">12 Ноября 2020</div>
-                    <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
-                        Руставели»</div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="post">
-                    <div class="date">12 Ноября 2020</div>
-                    <div class="title">Линейный объект: «Транспортная развязка на пересечении Северного пр. и ул.
-                        Руставели»</div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <footer>
@@ -250,6 +256,12 @@
 
         </div>
     </footer>
+    <script>
+        new Splide( '#post_slider', {
+            height: "100%",
+            pagination: false
+        } ).mount();
+    </script>
 </body>
 
 </html>

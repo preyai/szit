@@ -104,6 +104,8 @@ section {
   background-color: #f3f3f3;
   padding: 60px;
   margin-bottom: 30px;
+  display: block;
+  text-decoration: none;
   .date {
     color: #525252;
     font-size: 19px;
@@ -125,6 +127,23 @@ section {
     font-weight: 500;
     margin: 0 2rem;
     cursor: pointer;
+  }
+}
+#post_slider {
+  .splide__slide {
+    background: #e0e0e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 120px;
+    color: #ffffff;
+  }
+  .splide__arrow {
+    width: 75px;
+    height: 75px;
+    border-radius: 0;
+    background: #FFFFFF;
   }
 }
 // mixins

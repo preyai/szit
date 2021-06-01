@@ -35,7 +35,7 @@
                             <a href="./" class="nav-link">О компании</a>
                         </li>
                         <li class="nav-item">
-                            <a href="./" class="nav-link">Проекты</a>
+                            <a href="./projects.html" class="nav-link">Проекты</a>
                         </li>
                         <li class="nav-item">
                             <a href="./" class="nav-link">НАПРАВЛЕНИЯ</a>
@@ -504,7 +504,7 @@
                             <span>строящийся</span>
                         </label>
                     </div>
-                    <button>Смотреть все проекты</button>
+                    <button class="ms-auto">Смотреть все проекты</button>
                 </div>
             </div>
             <div class="row">
@@ -825,6 +825,20 @@
 
         </div>
     </footer>
+
+    <script>
+        new Splide('.banners').mount();
+        new Splide('#galery1', {
+            type: 'loop',
+            perPage: 6,
+            perMove: 1,
+        }).mount();
+        new Splide('#galery2', {
+            type: 'loop',
+            perPage: 6,
+            perMove: 1,
+        }).mount();
+    </script>
 </body>
 
 </html>

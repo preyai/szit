@@ -6275,6 +6275,8 @@ section.blue-bgr {
   background-color: #f3f3f3;
   padding: 60px;
   margin-bottom: 30px;
+  display: block;
+  text-decoration: none;
 }
 
 .post .date {
@@ -6298,6 +6300,29 @@ section.blue-bgr {
   font-weight: 500;
   margin: 0 2rem;
   cursor: pointer;
+}
+
+#post_slider .splide__slide {
+  background: #e0e0e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 200;
+  font-size: 120px;
+  color: #ffffff;
+}
+
+#post_slider .splide__arrow {
+  width: 75px;
+  height: 75px;
+  border-radius: 0;
+  background: #FFFFFF;
 }
 
 header {
@@ -6763,7 +6788,6 @@ footer .contacts .address {
 }
 
 .filters button {
-  margin-left: auto;
   color: #09236b;
   font-size: 16px;
   font-weight: 500;
