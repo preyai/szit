@@ -53,10 +53,25 @@ footer {
     }
   }
   @include media-breakpoint-down(xxxl) {
+    .logo {
+      img {
+        max-width: 150px;
+      }
+    }
     .menu-1 {
       .nav-link {
         font-size: 21px;
       }
+    }
+    .menu-2 {
+      .nav-link {
+        font-size: 10px;
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    .logo {
+      display: none;
     }
   }
 }
