@@ -6601,6 +6601,13 @@ footer .menu-2 .nav-link {
   letter-spacing: -0.32px;
 }
 
+footer .line {
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  background-color: #c4c4c4;
+}
+
 footer .contacts {
   text-align: right;
   display: -webkit-box;
@@ -6641,6 +6648,7 @@ footer .contacts .address {
   }
   footer .menu-1 .nav-link {
     font-size: 21px;
+    white-space: nowrap;
   }
   footer .menu-2 .nav-link {
     font-size: 10px;

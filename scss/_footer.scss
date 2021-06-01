@@ -25,7 +25,14 @@ footer {
       font-size: 16px;
       font-weight: 400;
       letter-spacing: -0.32px;
+      
     }
+  }
+  .line {
+    width: 1px;
+    padding: 0;
+    margin: 0;
+    background-color: #c4c4c4;
   }
   .contacts {
     text-align: right;
@@ -61,6 +68,7 @@ footer {
     .menu-1 {
       .nav-link {
         font-size: 21px;
+        white-space: nowrap;
       }
     }
     .menu-2 {
@@ -93,5 +101,4 @@ footer {
       display: none;
     }
   }
-  
 }
