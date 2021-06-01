@@ -7216,6 +7216,10 @@ footer .foot-0 div:last-child svg {
   margin-top: auto;
 }
 
+#contacts h1 {
+  margin-top: 1rem;
+}
+
 #contacts p {
   font-size: 25px;
 }
@@ -7223,7 +7227,7 @@ footer .foot-0 div:last-child svg {
 #contacts .phone {
   color: #09236b;
   font-family: Roboto;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   text-decoration: none;
   letter-spacing: -0.84px;
@@ -7255,6 +7259,7 @@ footer .foot-0 div:last-child svg {
 #contacts .row-form input,
 #contacts .row-form textarea {
   border-radius: 0;
+  border-color: #C4C4C4 !important;
   color: #525252;
   font-size: 16px;
   font-weight: 400;
