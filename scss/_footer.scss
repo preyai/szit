@@ -1,4 +1,5 @@
 footer {
+  
   .logo {
     img {
       max-width: 250px;
@@ -25,7 +26,6 @@ footer {
       font-size: 16px;
       font-weight: 400;
       letter-spacing: -0.32px;
-      
     }
   }
   .line {
@@ -57,6 +57,29 @@ footer {
       font-style: normal;
       letter-spacing: -0.32px;
       margin-top: auto;
+    }
+  }
+  .h-line {
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+  }
+  .foot-0 {
+    padding-bottom: 12px;
+    div {
+      &:first-child {
+        color: #373737;
+        letter-spacing: -0.28px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      &:nth-child(2) {
+        margin-left: 40px;
+        color: #373737;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.28px;
+      }
     }
   }
   @include media-breakpoint-down(xxxl) {
@@ -100,7 +123,7 @@ footer {
     .logo {
       display: none;
     }
-    .contacts  {
+    .contacts {
       text-align: left;
       max-width: unset;
     }
