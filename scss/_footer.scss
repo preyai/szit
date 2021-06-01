@@ -67,7 +67,7 @@ footer {
     }
     .menu-1 {
       .nav-link {
-        font-size: 21px;
+        font-size: 18px;
         white-space: nowrap;
       }
     }
@@ -96,9 +96,13 @@ footer {
       }
     }
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     .logo {
       display: none;
+    }
+    .contacts  {
+      text-align: left;
+      max-width: unset;
     }
   }
 }

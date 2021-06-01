@@ -6647,7 +6647,7 @@ footer .contacts .address {
     max-width: 150px;
   }
   footer .menu-1 .nav-link {
-    font-size: 21px;
+    font-size: 18px;
     white-space: nowrap;
   }
   footer .menu-2 .nav-link {
@@ -6673,9 +6673,13 @@ footer .contacts .address {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   footer .logo {
     display: none;
+  }
+  footer .contacts {
+    text-align: left;
+    max-width: unset;
   }
 }
 
