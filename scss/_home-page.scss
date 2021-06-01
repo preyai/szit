@@ -202,6 +202,9 @@
     bottom: 100%;
     right: 0;
   }
+  @include media-breakpoint-down(md) {
+    margin-top: 6rem;
+  }
 }
 #qestions {
   background-color: #f3f3f3;

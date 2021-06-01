@@ -6932,6 +6932,12 @@ footer .contacts .address {
   right: 0;
 }
 
+@media (max-width: 767.98px) {
+  .galery {
+    margin-top: 6rem;
+  }
+}
+
 #qestions {
   background-color: #f3f3f3;
 }
