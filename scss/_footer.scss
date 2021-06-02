@@ -1,5 +1,4 @@
 footer {
-
   .logo {
     img {
       max-width: 250px;
@@ -15,6 +14,8 @@ footer {
       font-weight: 300;
       font-style: normal;
       letter-spacing: -0.54px;
+      line-height: 55px;
+      padding: 0;
     }
   }
   .menu-2 {
@@ -24,8 +25,10 @@ footer {
     .nav-link {
       color: #09236b;
       font-size: 16px;
+      line-height: 19px;
       font-weight: 400;
       letter-spacing: -0.32px;
+      padding: 8px 0;
     }
   }
   .line {
@@ -51,12 +54,13 @@ footer {
       font-style: normal;
       letter-spacing: -0.4px;
     }
-    .address {
+    .addres {
       font-size: 16px;
       font-weight: 300;
       font-style: normal;
       letter-spacing: -0.32px;
       margin-top: auto;
+      color: #373941;
     }
   }
   .h-line {
@@ -90,7 +94,7 @@ footer {
       }
     }
   }
-  @include media-breakpoint-down(xxxl) {
+  @include media-breakpoint-down(xxl) {
     .logo {
       img {
         max-width: 150px;
@@ -135,12 +139,37 @@ footer {
       text-align: left;
       max-width: unset;
     }
+    .gray {
+      background: #f3f3f3;
+    }
+    .foot-0 {
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        &:first-child {
+          padding: 1rem 0;
+        }
+        &:nth-child(2) {
+          padding: 1rem 0;
+          margin-left: unset;
+        }
+        &:last-child {
+          display: flex;
+          justify-content: center;
+          background-color: #fff;
+          width: 100%;
+          margin-bottom: -12px;
+        }
+      }
+    }
   }
   @include media-breakpoint-down(md) {
     .menu-1 {
       .nav-item {
-       flex-basis: 100%;
-       text-align: center;
+        flex-basis: 100%;
+        text-align: center;
       }
       .nav-link {
         font-size: 20px;
@@ -148,8 +177,8 @@ footer {
     }
     .menu-2 {
       .nav-item {
-       flex-basis: 100%;
-       text-align: center;
+        flex-basis: 100%;
+        text-align: center;
       }
       .nav-link {
         font-size: 18px;

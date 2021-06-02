@@ -13,6 +13,15 @@
     justify-content: space-between;
     max-width: 560px;
     @include project;
+    .address {
+      font-size: 18px;
+    }
+    .title {
+      font-size: 34px;
+    }
+    .description {
+      font-size: 25px;
+    }
     .btn {
       border: 3px solid #09236b;
     }
@@ -216,6 +225,7 @@
       border-bottom: solid 2px #09236b;
       border-radius: 0;
       background: none;
+      min-width: 200px;
     }
   }
   button {
@@ -244,6 +254,10 @@
     .btn {
       display: inline-block;
     }
+    @include media-breakpoint-down(xxl) {
+      max-width: 90%;
+      margin-top: -30%;
+    }
     @include media-breakpoint-down(md) {
       margin-top: -40%;
       margin-bottom: 2rem;
@@ -259,6 +273,14 @@
   margin-top: 2rem;
   h2 {
     font-size: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    @include media-breakpoint-down(lg) {
+      font-size: 26px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 22px;
+    }
   }
 }
 .galery {
@@ -271,11 +293,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.5rem 1rem;
   }
   .splide__arrows {
     position: absolute;
     bottom: 100%;
     right: 0;
+    @include adaptiv-arrow;
   }
   @include media-breakpoint-down(md) {
     margin-top: 6rem;
@@ -287,6 +311,7 @@
 .qestion {
   background-color: #ffffff;
   padding: 2rem;
+  padding-bottom: 0;
   margin-bottom: 3rem;
   .qest {
     color: #09236b;
@@ -304,7 +329,17 @@
       border-bottom: 3px solid #09236b;
       border-right: 3px solid #09236b;
       transform: rotate(45deg) translateY(-100%);
-      // margin: 2rem;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      &::after {
+        content: "";
+        padding: 8px;
+        display: block;
+        border-bottom: 2px solid #09236b;
+        border-right: 2px solid #09236b;
+        transform: rotate(45deg) translateY(-100%);
+      }
     }
   }
   .answ {
@@ -314,6 +349,9 @@
     transition: 0.3s;
     max-height: 0px;
     overflow: hidden;
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
   }
   &.active {
     .qest {
@@ -325,37 +363,53 @@
     }
     .answ {
       max-height: 1000px;
+      padding-bottom: 2rem;
     }
   }
 }
 #map {
-  display: flex;
-  .contacts {
-    text-align: left;
+  position: relative;
+  .container {
     display: flex;
-    flex-direction: column;
-    color: #09236b;
-    background-color: #ffffff;
-    padding: 2rem;
+    align-items: center;
     position: absolute;
-    .phone {
-      font-size: 30px;
-      font-weight: 500;
-      font-style: normal;
-      letter-spacing: -0.6px;
-    }
-    .mail {
-      font-size: 20px;
-      font-weight: 500;
-      font-style: normal;
-      letter-spacing: -0.4px;
-    }
-    .address {
-      font-size: 16px;
-      font-weight: 300;
-      font-style: normal;
-      letter-spacing: -0.32px;
-      margin-top: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    .contacts {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      color: #09236b;
+      background-color: #ffffff;
+      padding: 60px;
+      
+      h2 {
+        font-size: 35px;
+        line-height: 99.4%;
+        letter-spacing: -0.04em;
+        margin: 0;
+        margin-bottom: 42px;
+      }
+      .phone {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 34px;
+        letter-spacing: -0.02em;
+      }
+      .mail {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+      }
+      .address {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.02em;
+        color: #373941;
+      }
     }
   }
 }

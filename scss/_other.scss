@@ -4,6 +4,9 @@
   }
   p {
     font-size: 25px;
+    @include media-breakpoint-down(lg) {
+      font-size: 18px;
+    }
   }
   .phone {
     color: #09236b;
@@ -12,6 +15,7 @@
     font-weight: 700;
     text-decoration: none;
     letter-spacing: -0.84px;
+    
   }
   .mail {
     font-size: 20px;
@@ -20,10 +24,12 @@
     letter-spacing: -0.4px;
     margin-left: 30px;
     @include underline;
+    @include media-breakpoint-down(lg) {
+      font-size: 18px;
+    }
   }
   .cont-line {
     margin-top: 80px;
-    margin-bottom: 100px;
   }
   .row-form {
     margin-top: 30px;
@@ -55,6 +61,15 @@
   }
   .inf {
     font-size: 13px;
+    padding: 1rem;
+  }
+  .line {
+    width: 100%;
+    height: 1px;
+    background: #c4c4c4;
+    opacity: 0.5;
+    margin-top: 70px;
+    margin-bottom: 36px;
   }
 }
 .head-img {
@@ -86,7 +101,6 @@
       }
     }
     @include media-breakpoint-down(lg) {
-     
       bottom: 20px;
       left: 20px;
       .wrap {
@@ -122,4 +136,174 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.post-title {
+  max-width: 60%;
+  span {
+    padding-left: 1rem;
+    color: #525252;
+    font-size: 19px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+#post {
+  .bold {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .semi {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  ul {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+
+#post_slider {
+  .splide__slide {
+    background: #e0e0e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 120px;
+    color: #ffffff;
+    @include media-breakpoint-down(lg) {
+      font-size: 60px;
+    }
+  }
+  .splide__arrows {
+    @include adaptiv-arrow;
+  }
+  .splide__arrow {
+    width: 67px;
+    height: 67px;
+    border-radius: 0;
+    background: #ffffff;
+    svg {
+      width: unset;
+      height: unset;
+    }
+  }
+}
+.post-first {
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 200px;
+  }
+}
+.post-other {
+  @include media-breakpoint-up(lg) {
+    max-width: 50%;
+    margin-top: -200px;
+  }
+}
+.company-title {
+  color: #09236b;
+  font-size: 32px;
+  font-weight: 400;
+  @include media-breakpoint-down(xl) {
+    font-size: 20px;
+  }
+}
+#history {
+  margin-bottom: 4rem;
+  margin-top: 10px;
+  @include media-breakpoint-down(md) {
+    margin-top: 40px;
+  }
+  .splide__arrows {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    @include media-breakpoint-up(xl) {
+      padding-bottom: 70px;
+    }
+    @include adaptiv-arrow;
+    .splide__arrow2 {
+      background: #f3f3f3;
+    }
+  }
+  .d-flex {
+    border-top: solid 1px #c4c4c4;
+  }
+  .year {
+    padding-top: 2rem;
+    color: #09236b;
+    font-size: 85px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: -3.4px;
+    line-height: 1;
+    border-top: solid 5px #09236b;
+  }
+  .descr {
+    padding-top: 2rem;
+
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 115%;
+    @include media-breakpoint-up(md) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @include media-breakpoint-down(xl) {
+      font-size: 18px;
+    }
+  }
+}
+#serts,
+#nagr {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  .sert {
+    padding: 0.5rem;
+  }
+  .splide__arrows {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding-bottom: 60px;
+    @include adaptiv-arrow;
+  }
+  @include media-breakpoint-down(md) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .splide__arrows {
+      padding-bottom: 20px;
+    }
+  }
+}
+.sert-sliders {
+  h3 {
+    margin-top: 60px;
+    font-size: 48px;
+  }
+}
+#blog {
+  margin-top: 125px;
+}
+#posts {
+  .project {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    .info {
+      .description {
+        font-size: 18px;
+      }
+      .status {
+        line-height: 2;
+      }
+      .btn {
+        border: 0;
+      }
+    }
+  }
 }

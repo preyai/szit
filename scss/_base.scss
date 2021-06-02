@@ -30,6 +30,10 @@ h1 {
   @include media-breakpoint-down(md) {
     font-size: 25px;
   }
+  &.semi {
+    font-weight: 500;
+    letter-spacing: -0.04em;
+  }
 }
 h2 {
   color: #09236b;
@@ -37,8 +41,13 @@ h2 {
   font-weight: 500;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  @include media-breakpoint-down(lg) {
+    font-size: 30px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
   @include media-breakpoint-down(md) {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 h3 {
@@ -48,7 +57,7 @@ h3 {
   font-style: normal;
   letter-spacing: -0.96px;
   @include media-breakpoint-down(md) {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 p {
@@ -80,31 +89,6 @@ a {
   width: max-content;
   span {
     margin-right: 1rem;
-  }
-}
-.post-title {
-  max-width: 60%;
-  span {
-    color: #525252;
-    font-size: 19px;
-    font-weight: 500;
-  }
-}
-#post {
-  .bold {
-    font-size: 28px;
-    font-weight: 400;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-  }
-  .semi {
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  ul {
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 300;
   }
 }
 #breadcrumbs {
@@ -151,6 +135,9 @@ section {
   .next {
     background-color: #f3f3f3;
     padding: 1rem;
+    @include media-breakpoint-down(lg) {
+      background: none;
+    }
   }
   .pag {
     color: #494949;
@@ -175,102 +162,6 @@ section {
     }
   }
 }
-#post_slider {
-  .splide__slide {
-    background: #e0e0e1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 200;
-    font-size: 120px;
-    color: #ffffff;
-  }
-  .splide__arrow {
-    width: 75px;
-    height: 75px;
-    border-radius: 0;
-    background: #ffffff;
-  }
-}
-.company-title {
-  color: #09236b;
-  font-size: 32px;
-  font-weight: 400;
-}
-#history {
-  color: #000000;
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 4rem;
-  margin-top: 60px;
-  .splide__arrows {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    padding-bottom: 70px;
-    .splide__arrow2 {
-      background: #f3f3f3;
-    }
-  }
-  .d-flex {
-    border-top: solid 1px #c4c4c4;
-  }
-  .year {
-    padding-top: 1rem;
-    color: #09236b;
-    font-size: 85px;
-    font-weight: 900;
-    font-style: normal;
-    letter-spacing: -3.4px;
-    line-height: 1;
-    border-top: solid 5px #09236b;
-  }
-  .descr {
-    padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-#serts,
-#nagr {
-  margin-top: 70px;
-  margin-bottom: 70px;
-  .sert {
-    padding: 0.5rem;
-  }
-  .splide__arrows {
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    padding-bottom: 60px;
-  }
-}
-.sert-sliders {
-  h3 {
-    margin-top: 60px;
-    font-size: 48px;
-  }
-}
-#blog {
-  margin-top: 125px;
-}
-#posts {
-  .project {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    .info {
-      .description {
-        font-size: 18px;
-      }
-      .status {
-        line-height: 2;
-      }
-      .btn {
-        border: 0;
-      }
-    }
-  }
-}
 
 // mixins
 @mixin underline {
@@ -283,7 +174,7 @@ section {
 @mixin project {
   .address {
     color: #09236b;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 500;
   }
   .status {
@@ -300,25 +191,48 @@ section {
   }
   .title {
     color: #09236b;
-    font-size: 34px;
+    font-size: 25px;
     font-weight: 500;
   }
   .description {
     color: #3d4047;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 1;
+    line-height: 115%;
     margin-bottom: 2rem;
+    margin-top: 15px;
   }
   .btn {
     border: none;
   }
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(xl) {
     .title {
-      font-size: 25px;
+      font-size: 20px;
     }
     .description {
-      font-size: 16px;
+      font-size: 14px;
+    }
+  }
+}
+@mixin adaptiv-arrow {
+  @include media-breakpoint-down(md) {
+    .splide__arrow2,
+    .splide__arrow {
+      width: 50px;
+      height: 50px;
+      svg {
+        width: 15px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .splide__arrow2,
+    .splide__arrow {
+      width: 30px;
+      height: 30px;
+      svg {
+        width: 10px;
+      }
     }
   }
 }
