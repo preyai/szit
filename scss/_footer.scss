@@ -28,7 +28,7 @@ footer {
       line-height: 19px;
       font-weight: 400;
       letter-spacing: -0.32px;
-      padding: 8px 0;
+      padding: 8px 4px;
     }
   }
   .line {
@@ -138,6 +138,7 @@ footer {
     .contacts {
       text-align: left;
       max-width: unset;
+      margin-top: 2rem;
     }
     .gray {
       background: #f3f3f3;

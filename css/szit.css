@@ -6189,7 +6189,7 @@ h1 {
 
 @media (max-width: 767.98px) {
   h1 {
-    font-size: 25px;
+    font-size: 25px !important;
   }
 }
 
@@ -6669,7 +6669,7 @@ footer .menu-2 .nav-link {
   line-height: 19px;
   font-weight: 400;
   letter-spacing: -0.32px;
-  padding: 8px 0;
+  padding: 8px 4px;
 }
 
 footer .line {
@@ -6792,6 +6792,7 @@ footer .foot-0 div:last-child svg {
   footer .contacts {
     text-align: left;
     max-width: unset;
+    margin-top: 2rem;
   }
   footer .gray {
     background: #f3f3f3;
@@ -7150,7 +7151,17 @@ footer .foot-0 div:last-child svg {
 
 @media (min-width: 768px) {
   .filters .fragment {
-    margin: 0 2rem;
+    margin: 1rem 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .filters .fragment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -7159,6 +7170,14 @@ footer .foot-0 div:last-child svg {
   font-size: 14px;
   font-weight: 400;
   margin: 0 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .filters .label {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: .5rem 0;
+  }
 }
 
 .filters label > span {
@@ -7367,12 +7386,6 @@ footer .foot-0 div:last-child svg {
   }
 }
 
-@media (max-width: 767.98px) {
-  .galery {
-    margin-top: 6rem;
-  }
-}
-
 #qestions {
   background-color: #f3f3f3;
 }
@@ -7506,6 +7519,7 @@ footer .foot-0 div:last-child svg {
 }
 
 #map .container .contacts .address {
+  margin-top: 30px;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: -0.02em;
@@ -7533,6 +7547,12 @@ footer .foot-0 div:last-child svg {
   font-weight: 700;
   text-decoration: none;
   letter-spacing: -0.84px;
+}
+
+@media (max-width: 991.98px) {
+  #contacts .phone {
+    font-size: 24px;
+  }
 }
 
 #contacts .mail {
@@ -7720,12 +7740,43 @@ footer .foot-0 div:last-child svg {
   }
 }
 
+@media (max-width: 767.98px) {
+  .head-img .slide-content {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .head-img .slide-content .wrap {
+    padding: 5px;
+  }
+  .head-img .slide-content .back {
+    padding: 5px 10px;
+  }
+  .head-img .slide-content .info {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .head-img .slide-content .title {
+    font-size: 14px;
+  }
+  .head-img .slide-content .description {
+    font-size: 12px;
+    margin-bottom: 0.3rem;
+  }
+}
+
 #project-page h1 {
   font-weight: bold;
   font-size: 29px;
   line-height: 115%;
   margin-bottom: 45px;
   margin-top: 80px;
+}
+
+@media (max-width: 991.98px) {
+  #project-page h1 {
+    font-size: 18px !important;
+  }
 }
 
 #posts_slider {
@@ -7948,6 +7999,7 @@ footer .foot-0 div:last-child svg {
 #serts .sert,
 #nagr .sert {
   padding: 0.5rem;
+  text-align: center;
 }
 
 #serts .splide__arrows,
