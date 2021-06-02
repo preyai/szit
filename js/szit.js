@@ -11,7 +11,8 @@ $(function () {
     
     $('.hamburger').on('click', function () {
         $(this).toggleClass('active');
-        $('.mob-hid').toggleClass('active');
+        $('#mobil-menu').toggleClass('active');
+        $('body').toggleClass('no_scroll');
     });
     $('.square').each(function (element) {
         $(this).height($(this).width());

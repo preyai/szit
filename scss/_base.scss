@@ -1,5 +1,10 @@
 body {
   font-family: Roboto;
+  &.no_scroll {
+    @include media-breakpoint-down(lg) {
+      overflow: hidden;
+    }
+  }
 }
 img {
   max-width: 100%;
@@ -272,7 +277,7 @@ section {
   &::after {
     content: "";
     display: block;
-    border-bottom: solid 2px #09236b;
+    border-bottom: solid 1px #09236b;
   }
 }
 @mixin project {
@@ -309,8 +314,6 @@ section {
     border: none;
   }
   @include media-breakpoint-down(md) {
-    .address {
-    }
     .title {
       font-size: 25px;
     }
