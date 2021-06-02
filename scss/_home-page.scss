@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 560px;
     @include project;
     .btn {
       border: 3px solid #09236b;
@@ -36,7 +37,7 @@
       @include underline;
     }
     @include media-breakpoint-down(lg) {
-      max-width: 70%;
+      max-width: 60%;
       padding: 20px;
       bottom: 20px;
       left: 20px;
@@ -56,7 +57,12 @@
       }
     }
     @include media-breakpoint-down(sm) {
-      transform: scale(0.5) translate(-40%, 62%);
+      // transform: scale(0.5) translate(-40%, 62%);
+      bottom: unset;
+      left: 20px;
+      top: 10px;
+      right: 20px;
+      max-width: unset;
     }
   }
   .splide__arrows {
@@ -69,6 +75,13 @@
       .splide__arrow2 {
         transform: scale(0.7);
       }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    img {
+      width: unset;
+      max-width: unset;
+      height: 100%;
     }
   }
 }
@@ -142,11 +155,17 @@
 #dlinks {
   .sz-bold {
     flex: 3;
+    @include media-breakpoint-down(xxl) {
+      font-size: 22px;
+    }
   }
   .link {
-    flex: 1;
-    @include media-breakpoint-down(md) {
-      margin-top: 0.5rem;
+    // flex: 1;
+    @include media-breakpoint-up(xl) {
+      margin-left: 40px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-top: 1rem;
       margin-bottom: 0.5rem;
     }
   }
@@ -208,7 +227,7 @@
     border: 0;
     @include underline;
   }
-  @include media-breakpoint-down(md) { 
+  @include media-breakpoint-down(md) {
     margin-bottom: 1rem;
   }
 }

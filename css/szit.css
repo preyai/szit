@@ -6197,8 +6197,8 @@ h2 {
   color: #09236b;
   font-size: 60px;
   font-weight: 500;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 767.98px) {
@@ -6955,6 +6955,7 @@ footer .foot-0 div:last-child svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 560px;
 }
 
 #main-slider .slide-content .address {
@@ -7041,7 +7042,7 @@ footer .foot-0 div:last-child svg {
 
 @media (max-width: 991.98px) {
   #main-slider .slide-content {
-    max-width: 70%;
+    max-width: 60%;
     padding: 20px;
     bottom: 20px;
     left: 20px;
@@ -7064,8 +7065,11 @@ footer .foot-0 div:last-child svg {
 
 @media (max-width: 575.98px) {
   #main-slider .slide-content {
-    -webkit-transform: scale(0.5) translate(-40%, 62%);
-            transform: scale(0.5) translate(-40%, 62%);
+    bottom: unset;
+    left: 20px;
+    top: 10px;
+    right: 20px;
+    max-width: unset;
   }
 }
 
@@ -7083,6 +7087,14 @@ footer .foot-0 div:last-child svg {
   #main-slider .splide__arrows .splide__arrow2 {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
+  }
+}
+
+@media (max-width: 767.98px) {
+  #main-slider img {
+    width: unset;
+    max-width: unset;
+    height: 100%;
   }
 }
 
@@ -7177,15 +7189,21 @@ footer .foot-0 div:last-child svg {
           flex: 3;
 }
 
-#dlinks .link {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+@media (max-width: 1399.98px) {
+  #dlinks .sz-bold {
+    font-size: 22px;
+  }
 }
 
-@media (max-width: 767.98px) {
+@media (min-width: 1200px) {
   #dlinks .link {
-    margin-top: 0.5rem;
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #dlinks .link {
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
   }
 }
