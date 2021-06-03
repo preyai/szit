@@ -42,6 +42,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: #09236b;
+    height: 100%;
     .phone {
       font-size: 30px;
       font-weight: 500;
@@ -53,6 +54,7 @@ footer {
       font-weight: 500;
       font-style: normal;
       letter-spacing: -0.4px;
+      margin-bottom: auto;
     }
     .addres {
       font-size: 16px;
@@ -70,7 +72,7 @@ footer {
   }
   .foot-0 {
     padding-bottom: 12px;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     div {
       &:first-child {
         color: #373737;

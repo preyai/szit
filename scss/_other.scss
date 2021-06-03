@@ -38,6 +38,7 @@
     input,
     textarea {
       border-radius: 0;
+      border-width: 1px;
       border-color: #c4c4c4 !important;
       color: #525252;
       font-size: 16px;
@@ -166,13 +167,16 @@
 }
 
 .post-title {
-  max-width: 60%;
+  
   span {
     padding-left: 1rem;
     color: #525252;
     font-size: 19px;
     font-weight: 500;
     white-space: nowrap;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 60%;
   }
 }
 #post {

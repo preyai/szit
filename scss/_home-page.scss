@@ -199,7 +199,7 @@
     margin: 0 0.5rem;
     @include media-breakpoint-down(md) {
       flex-basis: 100%;
-      margin: .5rem 0;
+      margin: 0.5rem 0;
     }
   }
   label {
@@ -308,6 +308,17 @@
     bottom: 100%;
     right: 0;
     @include adaptiv-arrow;
+    @include media-breakpoint-down(sm) {
+      bottom: 50%;
+      right: -30px;
+      left: -30px;
+      transform: translateY(50%);
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    margin: 0 20px;
   }
   // @include media-breakpoint-down(md) {
   //   margin-top: 6rem;
@@ -374,51 +385,50 @@
       padding-bottom: 2rem;
     }
   }
+  @include media-breakpoint-down(md) {
+    padding: 1.2rem;
+  }
 }
 #map {
   position: relative;
-  .container {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    .contacts {
-      text-align: left;
-      display: flex;
-      flex-direction: column;
-      color: #09236b;
-      background-color: #ffffff;
-      padding: 60px;
+  display: flex;
+  align-items: center;
 
-      h2 {
-        font-size: 35px;
-        line-height: 99.4%;
-        letter-spacing: -0.04em;
-        margin: 0;
-        margin-bottom: 42px;
-      }
-      .phone {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 34px;
-        letter-spacing: -0.02em;
-      }
-      .mail {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: -0.02em;
-      }
-      .address {
-        margin-top: 30px;
-        font-size: 18px;
-        line-height: 21px;
-        letter-spacing: -0.02em;
-        color: #373941;
-      }
+  .contacts {
+    margin-left: 10%;
+    position: absolute;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #09236b;
+    background-color: #ffffff;
+    padding: 60px;
+
+    h2 {
+      font-size: 35px;
+      line-height: 99.4%;
+      letter-spacing: -0.04em;
+      margin: 0;
+      margin-bottom: 42px;
+    }
+    .phone {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: -0.02em;
+    }
+    .mail {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+    }
+    .address {
+      margin-top: 30px;
+      font-size: 18px;
+      line-height: 21px;
+      letter-spacing: -0.02em;
+      color: #373941;
     }
   }
 }
