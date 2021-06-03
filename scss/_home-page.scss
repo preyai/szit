@@ -67,11 +67,15 @@
     }
     @include media-breakpoint-down(sm) {
       // transform: scale(0.5) translate(-40%, 62%);
-      bottom: unset;
+      bottom: 35px;
       left: 20px;
-      top: 10px;
       right: 20px;
       max-width: unset;
+      background-color: transparentize($color: #ffffff, $amount: .7);
+      .description,
+      .dots {
+        display: none;
+      }
     }
   }
   .splide__arrows {
@@ -80,9 +84,13 @@
     bottom: 60px;
     @include media-breakpoint-down(sm) {
       right: 10px;
-      bottom: 10px;
+      bottom: 0px;
       .splide__arrow2 {
-        transform: scale(0.7);
+        width: 25px;
+        height: 25px;
+        svg {
+          width: 60%;
+        }
       }
     }
   }

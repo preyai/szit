@@ -6425,8 +6425,8 @@ header .phone {
 }
 
 header .hamburger {
-  width: 68px;
-  height: 68px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   background-color: #09236b;
   display: -webkit-box;
@@ -6442,8 +6442,8 @@ header .hamburger {
 }
 
 header .hamburger .hp {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   background-color: #ffffff;
   border-radius: 50%;
   -webkit-transition: 0.3s;
@@ -6452,13 +6452,13 @@ header .hamburger .hp {
 }
 
 header .hamburger .hp1 {
-  -webkit-transform: translateX(-16px);
-          transform: translateX(-16px);
+  -webkit-transform: translateX(-12px);
+          transform: translateX(-12px);
 }
 
 header .hamburger .hp3 {
-  -webkit-transform: translateX(16px);
-          transform: translateX(16px);
+  -webkit-transform: translateX(12px);
+          transform: translateX(12px);
 }
 
 header .hamburger.active .hp1 {
@@ -6993,11 +6993,15 @@ footer .foot-0 div:last-child svg {
 
 @media (max-width: 575.98px) {
   #main-slider .slide-content {
-    bottom: unset;
+    bottom: 35px;
     left: 20px;
-    top: 10px;
     right: 20px;
     max-width: unset;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #main-slider .slide-content .description,
+  #main-slider .slide-content .dots {
+    display: none;
   }
 }
 
@@ -7010,11 +7014,14 @@ footer .foot-0 div:last-child svg {
 @media (max-width: 575.98px) {
   #main-slider .splide__arrows {
     right: 10px;
-    bottom: 10px;
+    bottom: 0px;
   }
   #main-slider .splide__arrows .splide__arrow2 {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
+    width: 25px;
+    height: 25px;
+  }
+  #main-slider .splide__arrows .splide__arrow2 svg {
+    width: 60%;
   }
 }
 

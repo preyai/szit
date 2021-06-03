@@ -51,8 +51,8 @@ header {
   }
   // адаптивное меню
   .hamburger {
-    width: 68px;
-    height: 68px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background-color: #09236b;
     display: flex;
@@ -60,18 +60,18 @@ header {
     justify-content: space-evenly;
     cursor: pointer;
     .hp {
-      width: 6px;
-      height: 6px;
+      width: 4px;
+      height: 4px;
       background-color: #ffffff;
       border-radius: 50%;
       transition: 0.3s;
       position: absolute;
     }
     .hp1 {
-      transform: translateX(-16px);
+      transform: translateX(-12px);
     }
     .hp3 {
-      transform: translateX(16px);
+      transform: translateX(12px);
     }
     &.active {
       .hp1 {
