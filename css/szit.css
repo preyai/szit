@@ -7002,7 +7002,8 @@ footer .foot-0 div:last-child svg {
     padding-bottom: 40px;
   }
   #main-slider .slide-content .description,
-  #main-slider .slide-content .dots {
+  #main-slider .slide-content .dots,
+  #main-slider .slide-content .vall {
     display: none;
   }
 }
@@ -7319,6 +7320,14 @@ footer .foot-0 div:last-child svg {
   }
   .project .info .status {
     margin: 1rem 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .project .info {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 100%;
   }
 }
 
