@@ -6993,11 +6993,13 @@ footer .foot-0 div:last-child svg {
 
 @media (max-width: 575.98px) {
   #main-slider .slide-content {
-    bottom: 35px;
-    left: 20px;
-    right: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     max-width: unset;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: unset;
+    background-image: linear-gradient(9deg, rgba(255, 255, 255, 0.9), transparent);
+    padding-bottom: 40px;
   }
   #main-slider .slide-content .description,
   #main-slider .slide-content .dots {
@@ -7406,6 +7408,10 @@ footer .foot-0 div:last-child svg {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .galery .splide__arrows .splide__arrow2 {
+    background: none;
+    opacity: 0.3;
   }
 }
 
